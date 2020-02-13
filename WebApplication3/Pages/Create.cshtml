@@ -1,0 +1,14 @@
+﻿@page
+@model WebApplication3.Pages.CreateModel
+@{
+}
+<html>
+<body>
+    <form method="post">
+        <p><input type="text" asp-for="@Model.BoardModel.Title" /></p>
+        <p><input type="text" asp-for="@Model.BoardModel.Content" /></p>
+        <p><button type="submit">저장</button></p>
+        <div asp-validation-summary="All" style="color:red;"></div>
+    </form>
+</body>
+</html>

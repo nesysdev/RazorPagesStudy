@@ -1,0 +1,14 @@
+﻿@page "{boardno:int}"
+@model WebApplication3.Pages.ViewModel
+@{
+}
+@if (Model.BoardModel == null)
+{
+    <p>해당 글이 존재하지 않습니다.</p>
+}
+else
+{
+    <p>@Model.BoardModel.No</p>
+    <p>@Model.BoardModel.Title</p>
+    <p>@Model.BoardModel.Content</p>
+}
