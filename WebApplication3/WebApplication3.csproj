@@ -1,12 +1,18 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Shared\" />
-    <Folder Include="wwwroot\" />
+    <Compile Remove="Shared\**" />
+    <Compile Remove="wwwroot\**" />
+    <Content Remove="Shared\**" />
+    <Content Remove="wwwroot\**" />
+    <EmbeddedResource Remove="Shared\**" />
+    <EmbeddedResource Remove="wwwroot\**" />
+    <None Remove="Shared\**" />
+    <None Remove="wwwroot\**" />
   </ItemGroup>
 
 </Project>
